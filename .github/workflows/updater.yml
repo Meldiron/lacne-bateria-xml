@@ -1,38 +1,32 @@
-jobs: 
-  main: 
-    runs-on: ubuntu-latest
-    steps: 
-      - 
-        uses: actions/checkout@v2
-      - 
-        name: "Use Node.js"
-        uses: actions/setup-node@v2
-        with: 
-          node-version: "16"
-      - 
-        run: "npm install"
-      - 
-        env: 
-          DB_DATABASE: "${{ secrets.DB_DATABASE }}"
-          DB_HOST: "${{ secrets.DB_HOST }}"
-          DB_PASSWORD: "${{ secrets.DB_PASSWORD }}"
-          DB_PORT: "${{ secrets.DB_PORT }}"
-          DB_SSH_HOST: "${{ secrets.DB_SSH_HOST }}"
-          DB_SSH_PASSWORD: "${{ secrets.DB_SSH_PASSWORD }}"
-          DB_SSH_USER: "${{ secrets.DB_SSH_USER }}"
-          DB_USERNAME: "${{ secrets.DB_USERNAME }}"
-        name: "Download and update Mall data"
-        run: "node dist/updater.js"
-      - 
-        name: "Update resources"
-        uses: test-room-7/action-update-file@v1
-        with: 
-          commit-msg: "Scheduled update mall feed"
-          file-path: data/*.xml
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-name: "Update Mall XML"
-true: 
-  schedule: 
-    - 
-      cron: "0 0 * * *"
-  workflow_dispatch:
+name: Update Mall XML
+on:
+ schedule:
+  - cron: "0 0 * * *" # Every 24 hours
+ workflow_dispatch:
+jobs:
+ main:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v2
+   - name: Use Node.js
+     uses: actions/setup-node@v2
+     with:
+      node-version: "16"
+   - run: npm install
+   - name: Download and update Mall data
+     run: node dist/updater.js
+     env:
+      DB_DATABASE: ${{ secrets.DB_DATABASE }}
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      DB_USERNAME: ${{ secrets.DB_USERNAME }}
+      DB_PORT: ${{ secrets.DB_PORT }}
+      DB_HOST: ${{ secrets.DB_HOST }}
+      DB_SSH_PASSWORD: ${{ secrets.DB_SSH_PASSWORD }}
+      DB_SSH_USER: ${{ secrets.DB_SSH_USER }}
+      DB_SSH_HOST: ${{ secrets.DB_SSH_HOST }}
+   - name: Update resources
+     uses: test-room-7/action-update-file@v1
+     with:
+      file-path: data/*.xml
+      commit-msg: Scheduled update mall feed
+      github-token: ${{ secrets.GITHUB_TOKEN }}
