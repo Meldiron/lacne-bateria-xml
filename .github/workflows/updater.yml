@@ -24,3 +24,9 @@ jobs:
       DB_SSH_PASSWORD: ${{ secrets.DB_SSH_PASSWORD }}
       DB_SSH_USER: ${{ secrets.DB_SSH_USER }}
       DB_SSH_HOST: ${{ secrets.DB_SSH_HOST }}
+    - name: Update resources
+     uses: test-room-7/action-update-file@v1
+     with:
+      file-path: data/*.xml
+      commit-msg: Scheduled update mall feed
+      github-token: ${{ secrets.GITHUB_TOKEN }}

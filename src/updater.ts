@@ -6,6 +6,8 @@ dotenv.config();
 import { SSHConnection } from "./SQLManager";
 import convert from "xml-js";
 import format from "xml-formatter";
+import fs from "fs";
+import path from "path";
 
 (async () => {
     console.log("Starting now", Date.now());
@@ -266,8 +268,8 @@ import format from "xml-formatter";
         collapseContent: true
     });
 
-    console.log(availabilityXml.length);
-    console.log(productsXml.length);
+    fs.writeFileSync(path.join(__dirname, "../data/mall_products.xml"), productsXml);
+    fs.writeFileSync(path.join(__dirname, "../data/mall_availability.xml"), availabilityXml);
 })().then(() => {
     console.log("Finished", Date.now());
     process.exit();
