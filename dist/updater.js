@@ -52,6 +52,8 @@ dotenv_1.default.config();
 var SQLManager_1 = require("./SQLManager");
 var xml_js_1 = __importDefault(require("xml-js"));
 var xml_formatter_1 = __importDefault(require("xml-formatter"));
+var fs_1 = __importDefault(require("fs"));
+var path_1 = __importDefault(require("path"));
 (function () { return __awaiter(void 0, void 0, void 0, function () {
     var con, _a, productsResponse, productImagesResponse, productDescriptionsResponse, products, productImages, productDescriptions, availabilityJson, productsJson, availabilityXml, productsXml;
     return __generator(this, function (_b) {
@@ -302,8 +304,8 @@ var xml_formatter_1 = __importDefault(require("xml-formatter"));
                 productsXml = xml_formatter_1.default(xml_js_1.default.json2xml(JSON.stringify(productsJson)), {
                     collapseContent: true
                 });
-                console.log(availabilityXml.length);
-                console.log(productsXml.length);
+                fs_1.default.writeFileSync(path_1.default.join(__dirname, "../data/mall_products.xml"), productsXml);
+                fs_1.default.writeFileSync(path_1.default.join(__dirname, "../data/mall_availability.xml"), availabilityXml);
                 return [2 /*return*/];
         }
     });
