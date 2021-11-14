@@ -112,7 +112,7 @@ import path from "path";
                                     type: "element",
                                     name: "URL",
                                     elements: [
-                                        { type: "text", text: `${product.image}` }
+                                        { type: "text", text: `https://www.lacne-baterie.eu/image/${product.image}` }
                                     ]
                                 },
                                 {
@@ -133,7 +133,7 @@ import path from "path";
                                         type: "element",
                                         name: "URL",
                                         elements: [
-                                            { type: "text", text: `${product.image}` }
+                                            { type: "text", text: `https://www.lacne-baterie.eu/image/${product.image}` }
                                         ]
                                     },
                                     {

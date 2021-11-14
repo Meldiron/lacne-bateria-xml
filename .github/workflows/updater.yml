@@ -30,3 +30,4 @@ jobs:
       file-path: data/*.xml
       commit-msg: Scheduled update mall feed
       github-token: ${{ secrets.GITHUB_TOKEN }}
+      branch: data
