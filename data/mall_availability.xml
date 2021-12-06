@@ -121,7 +121,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1581</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>0</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -246,12 +246,12 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1673</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>199</ID>
-        <IN_STOCK>10</IN_STOCK>
+        <IN_STOCK>9</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -871,7 +871,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1628</ID>
-        <IN_STOCK>1</IN_STOCK>
+        <IN_STOCK>0</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1066,7 +1066,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1584</ID>
-        <IN_STOCK>10</IN_STOCK>
+        <IN_STOCK>9</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1186,7 +1186,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1597</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1626,7 +1626,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2409</ID>
-        <IN_STOCK>7</IN_STOCK>
+        <IN_STOCK>5</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1961,7 +1961,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1178</ID>
-        <IN_STOCK>0</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -2291,7 +2291,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1856</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -2496,7 +2496,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1849</ID>
-        <IN_STOCK>-1</IN_STOCK>
+        <IN_STOCK>-2</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -2631,7 +2631,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2307</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -2991,7 +2991,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2002</ID>
-        <IN_STOCK>1</IN_STOCK>
+        <IN_STOCK>0</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3016,7 +3016,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2006</ID>
-        <IN_STOCK>14</IN_STOCK>
+        <IN_STOCK>11</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3036,7 +3036,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2313</ID>
-        <IN_STOCK>1</IN_STOCK>
+        <IN_STOCK>0</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3236,7 +3236,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2080</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>0</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3296,7 +3296,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2102</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3341,7 +3341,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2113</ID>
-        <IN_STOCK>6</IN_STOCK>
+        <IN_STOCK>5</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3896,7 +3896,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2349</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -4756,7 +4756,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2594</ID>
-        <IN_STOCK>0</IN_STOCK>
+        <IN_STOCK>-1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
