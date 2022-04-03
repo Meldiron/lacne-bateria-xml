@@ -8,6 +8,7 @@ import convert from "xml-js";
 import format from "xml-formatter";
 import fs from "fs";
 import path from "path";
+import { removeDiacritics } from "./utils";
 
 (async () => {
     console.log("Starting now", Date.now());
@@ -148,6 +149,19 @@ import path from "path";
                         })
                     ];
 
+                    const productCategoryId: any = [];
+                    const productTitleSimple = removeDiacritics(productTitle).split(" ").join("");
+
+                    if (productTitleSimple.includes("tvrdenesklo")) {
+                        productCategoryId.push({
+                            type: "element",
+                            name: "CATEGORY_ID",
+                            elements: [
+                                { type: "text", text: "EF006" }
+                            ]
+                        });
+                    }
+
                     return {
                         type: "element",
                         name: "ITEM",
@@ -204,6 +218,7 @@ import path from "path";
 
                             ...descriptionsJsonArray,
                             ...imageJsonArray,
+                            ...productCategoryId,
                             {
                                 type: "element",
                                 name: "DIMENSIONS",
