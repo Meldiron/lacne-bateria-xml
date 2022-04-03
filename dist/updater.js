@@ -203,6 +203,15 @@ var utils_1 = require("./utils");
                                         ]
                                     });
                                 }
+                                else {
+                                    productCategoryId.push({
+                                        type: "element",
+                                        name: "CATEGORY_ID",
+                                        elements: [
+                                            { type: "text", text: "EG054" }
+                                        ]
+                                    });
+                                }
                                 return {
                                     type: "element",
                                     name: "ITEM",

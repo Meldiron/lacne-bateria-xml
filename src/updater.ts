@@ -160,6 +160,14 @@ import { removeDiacritics } from "./utils";
                                 { type: "text", text: "EF006" }
                             ]
                         });
+                    } else {
+                        productCategoryId.push({
+                            type: "element",
+                            name: "CATEGORY_ID",
+                            elements: [
+                                { type: "text", text: "EG054" }
+                            ]
+                        });
                     }
 
                     return {
