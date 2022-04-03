@@ -54,6 +54,7 @@ var xml_js_1 = __importDefault(require("xml-js"));
 var xml_formatter_1 = __importDefault(require("xml-formatter"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
+var utils_1 = require("./utils");
 (function () { return __awaiter(void 0, void 0, void 0, function () {
     var con, _a, productsResponse, productImagesResponse, productDescriptionsResponse, products, productImages, productDescriptions, availabilityJson, productsJson, availabilityXml, productsXml;
     return __generator(this, function (_b) {
@@ -157,7 +158,7 @@ var path_1 = __importDefault(require("path"));
                                                 type: "element",
                                                 name: "URL",
                                                 elements: [
-                                                    { type: "text", text: "" + product.image }
+                                                    { type: "text", text: "https://www.lacne-baterie.eu/image/" + product.image }
                                                 ]
                                             },
                                             {
@@ -178,7 +179,7 @@ var path_1 = __importDefault(require("path"));
                                                 type: "element",
                                                 name: "URL",
                                                 elements: [
-                                                    { type: "text", text: "" + product.image }
+                                                    { type: "text", text: "https://www.lacne-baterie.eu/image/" + product.image }
                                                 ]
                                             },
                                             {
@@ -191,6 +192,17 @@ var path_1 = __importDefault(require("path"));
                                         ]
                                     };
                                 }));
+                                var productCategoryId = [];
+                                var productTitleSimple = utils_1.removeDiacritics(productTitle).split(" ").join("");
+                                if (productTitleSimple.includes("tvrdenesklo")) {
+                                    productCategoryId.push({
+                                        type: "element",
+                                        name: "CATEGORY_ID",
+                                        elements: [
+                                            { type: "text", text: "EF006" }
+                                        ]
+                                    });
+                                }
                                 return {
                                     type: "element",
                                     name: "ITEM",
@@ -243,7 +255,7 @@ var path_1 = __importDefault(require("path"));
                                                 { type: "text", text: isSmallProduct ? 'smallbox' : 'bigbox' }
                                             ]
                                         }
-                                    ], descriptionsJsonArray, imageJsonArray, [
+                                    ], descriptionsJsonArray, imageJsonArray, productCategoryId, [
                                         {
                                             type: "element",
                                             name: "DIMENSIONS",
