@@ -386,7 +386,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2330</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1241,7 +1241,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1598</ID>
-        <IN_STOCK>4</IN_STOCK>
+        <IN_STOCK>3</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -1826,7 +1826,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1093</ID>
-        <IN_STOCK>2</IN_STOCK>
+        <IN_STOCK>1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -2196,7 +2196,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1751</ID>
-        <IN_STOCK>4</IN_STOCK>
+        <IN_STOCK>3</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3036,7 +3036,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2006</ID>
-        <IN_STOCK>15</IN_STOCK>
+        <IN_STOCK>14</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3246,12 +3246,12 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2078</ID>
-        <IN_STOCK>3</IN_STOCK>
+        <IN_STOCK>2</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2079</ID>
-        <IN_STOCK>3</IN_STOCK>
+        <IN_STOCK>2</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
@@ -3771,7 +3771,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>2273</ID>
-        <IN_STOCK>7</IN_STOCK>
+        <IN_STOCK>6</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
