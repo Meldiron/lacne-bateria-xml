@@ -2611,7 +2611,7 @@
     </AVAILABILITY>
     <AVAILABILITY>
         <ID>1877</ID>
-        <IN_STOCK>1</IN_STOCK>
+        <IN_STOCK>-1</IN_STOCK>
         <ACTIVE>true</ACTIVE>
     </AVAILABILITY>
     <AVAILABILITY>
